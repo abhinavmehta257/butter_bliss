@@ -39,7 +39,7 @@ function PopularDished() {
                 </div>
                 <div class="text-red-600 text-xs font-medium tracking-tight">View All</div>
             </div>
-            <div className="flex flex-row w-full overflow-hidden overflow-scroll scrollbar-hide"> 
+            <div className="flex flex-row w-full overflow-hidden overflow-scroll no-scrollbar"> 
                 {
                     popularDishes.map((dish) =>(<div className="mr-[8px]"><FoodCard name={dish.name} cost={dish.cost} img={dish.img}/></div>))
                 }
