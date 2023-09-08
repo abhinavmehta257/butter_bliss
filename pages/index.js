@@ -6,6 +6,7 @@ import Search from "../components/landingPage/Search";
 import FoodCard from "../components/cards/FoodCard";
 import PopularDished from "../components/PopularDishes";
 import WhyChooseUs from "../components/cards/WhyChooseUs";
+import MoodToday from "../components/MoodToday";
 export default function Home() {
   return (
     <>
@@ -18,6 +19,9 @@ export default function Home() {
         <PopularDished/>
         <div className="mt-[25px]">
           <WhyChooseUs />
+        </div>
+        <div>
+          <MoodToday />
         </div>
       </div>
     </>
