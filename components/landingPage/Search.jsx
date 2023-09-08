@@ -2,7 +2,7 @@ import React from "react";
 
 function Search() {
   return (
-    <div className="flex flex-row items-center p-[12px] bg-[#F6F6F6] rounded-[8px]">
+    <div className="flex flex-row items-center p-[12px] bg-[#F6F6F6] rounded-[8px] w-full">
       <span className="mr-[12px]">
         <img src="./assests/icons/Search.png" alt="" />
       </span>

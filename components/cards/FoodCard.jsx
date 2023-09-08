@@ -1,19 +1,19 @@
 import React from "react";
 
-function FoodCard() {
+function FoodCard({name,cost,img}) {
   return (
     <div className="w-[194px] h-[227px] bg-white rounded-lg shadow">
       <img
         className="w-[194px] h-[123px] rounded-tl-lg rounded-tr-lg"
-        src="https://via.placeholder.com/194x123"
+        src={img}
       />
       <div className="flex flex-row justify-between items-center p-[12px]">
         <div className="flex flex-col">
           <div className="text-neutral-800 text-base font-medium tracking-tight">
-            Aloo Chaat
+            {name}
           </div>
           <div className="text-orange-500 text-base font-medium leading-tight">
-            $3.88
+            ${cost}
           </div>
         </div>
 
@@ -22,7 +22,7 @@ function FoodCard() {
         </div>
       </div>
 
-      <div className="w-[194px] h-[35px] bg-yellow-500 rounded-bl-lg rounded-br-lg shadow text-center">
+      <div className="w-[194px] h-[35px] bg-yellow-500 rounded-bl-lg rounded-br-lg shadow text-center flex flex-col justify-center">
         <div className="text-white text-sm font-medium tracking-tight">
           Add to cart
         </div>
