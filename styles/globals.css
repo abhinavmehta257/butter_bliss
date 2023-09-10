@@ -30,3 +30,10 @@ a {
           -ms-overflow-style: none;  /* IE and Edge */
           scrollbar-width: none;  /* Firefox */
       }
+
+.thin-scroll::-webkit-scrollbar-thumb{
+  border: 2px solid transparent;
+  border-radius: 100px;
+  background-color: #D82F12;
+  background-clip: content-box;
+}

@@ -1,6 +1,6 @@
-import { Carousel } from "@material-tailwind/react";
+import react from "react";
 
-export function CarouselWithContent() {
+export function Carousel() {
   return (
     <Carousel className="rounded-xl">
       <img

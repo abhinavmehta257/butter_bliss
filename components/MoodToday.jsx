@@ -30,8 +30,8 @@ function MoodToday(){
            <div class="text-neutral-800 text-base font-semibold tracking-tight mb-[16px] mt-[16px]">What's your mood today?</div>
            <div className="flex flex-wrap gap-[8px]">
             {
-                categories.map((category)=>(
-                    <CategoryCard title={category.title} img={category.img}/>
+                categories.map((category, ind)=>(
+                    <CategoryCard title={category.title} img={category.img} key={ind}/>
                 ))
             }
            </div>

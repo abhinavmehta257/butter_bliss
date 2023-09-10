@@ -1,5 +1,16 @@
 import React from "react";
 
+let addresses = [
+  {"nick_name":"Home 1",
+  "value":"Home - Supertech Eco Village -1",},
+  {"nick_name":"Home 2",
+  "value":"Home - Supertech Eco Village -2",},
+  {"nick_name":"Home 3",
+  "value":"Home - Supertech Eco Village -3",},
+
+
+]
+
 function AppHeader() {
   return (
     <div className="p-[16px] flex flex-row justify-between bg-gradient-to-tl from-neutral-200 to-orange-100 rounded-bl-xl rounded-br-xl">
@@ -9,11 +20,16 @@ function AppHeader() {
         </span>
         <select
           name="address"
-          className="bg-transparent text-stone-500 text-sm font-normal focus:border-transparent ml-[-4px] focus:outline-0"
+          className="bg-transparent text-stone-500 text-sm font-normal focus:border-transparent ml-[-4px] focus:outline-0 w-32"
         >
-          <option value="address1" id="1" className="">
-            Home - Supertech Eco Village -1
-          </option>
+          {
+            addresses.map((address, ind)=>
+              <option value="{address.value}" id="1" className="text-ellipsis">
+                {address.nick_name}
+              </option>
+          )
+          }
+          
         </select>
       </div>
       <div className="w-[42px] h-[42px]">

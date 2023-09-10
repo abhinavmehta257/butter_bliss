@@ -37,11 +37,11 @@ function PopularDished() {
                     <div class="text-neutral-800 text-base font-semibold tracking-tight">Popular Dishes</div>
                     <div class="text-zinc-600 text-xs font-normal tracking-tight">Dishes which are popular near you</div>
                 </div>
-                <div class="text-red-600 text-xs font-medium tracking-tight">View All</div>
+                <div class="text-red-600 text-xs font-medium tracking-tight underline">View All</div>
             </div>
-            <div className="flex flex-row w-full overflow-hidden overflow-scroll no-scrollbar"> 
+            <div className="flex flex-row w-full overflow-hidden overflow-scroll snap-x no-scrollbar .thin-scroll"> 
                 {
-                    popularDishes.map((dish) =>(<div className="mr-[8px]"><FoodCard name={dish.name} cost={dish.cost} img={dish.img}/></div>))
+                    popularDishes.map((dish, ind) =>(<div className="mr-[8px] snap-center"><FoodCard name={dish.name} cost={dish.cost} img={dish.img} key={ind}/></div>))
                 }
             </div>
         </div>
